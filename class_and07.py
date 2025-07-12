@@ -18,6 +18,7 @@ class Phone(Field):
     def __init__(self, value):
         if not (len(value) == 10):
             raise ValueError("Phone number must be 10 digits") 
+        super().__init__(value)
 class Birthday(Field):
     def __init__(self, value):
         try:
